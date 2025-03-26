@@ -2,6 +2,10 @@
 
 A Python script that polls the Veeder Root fuel management system for tank reserves, creates a text file with the data, and updates Blue Iris overlay variables.
 
+### Example Deployment:
+![Fuel Level Overlay Example](photo.png)
+
+
 ## Overview
 
 This script connects to a Veeder Root fuel management system via a serial connection, retrieves current fuel tank levels, formats the data, and writes it to a text file. The data can then be used with Blue Iris camera system overlays to display fuel levels on camera feeds.
@@ -66,6 +70,12 @@ Last Updated:
 MM-DD-YY at 
 HH:MM AM/PM
 ```
+
+### Example Overlay
+
+Below is an example of how the data appears when displayed as an overlay in Blue Iris:
+
+![Fuel Level Overlay Example](photo.png)
 
 ## Customization
 
