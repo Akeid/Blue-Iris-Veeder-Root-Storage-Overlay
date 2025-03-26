@@ -1,3 +1,39 @@
+"""
+############################################################################
+#                                                                          #
+#        █████╗ ██╗  ██╗███████╗██╗██████╗                                #
+#       ██╔══██╗██║ ██╔╝██╔════╝██║██╔══██╗                               #
+#       ███████║█████╔╝ █████╗  ██║██║  ██║                               #
+#       ██╔══██║██╔═██╗ ██╔══╝  ██║██║  ██║                               #
+#       ██║  ██║██║  ██╗███████╗██║██████╔╝                               #
+#       ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝╚═════╝                                #
+#                                                                          #
+#             Veeder Root Tank Monitor Data Poller for Blue Iris           #
+#                                                                          #
+############################################################################
+#                                                                          #
+#  Author: Akeid (https://github.com/Akeid)                               #
+#  Repository: https://github.com/Akeid/Blue-Iris-Veeder-Root-Storage-Overlay #
+#  License: CC BY-NC 4.0 (Attribution-NonCommercial)                      #
+#                                                                          #
+#  Description:                                                            #
+#  This script polls a Veeder Root fuel management system for tank         #
+#  reserve data, parses the response, and creates a formatted text file    #
+#  for use with Blue Iris camera overlays. The script retrieves data       #
+#  for multiple fuel tanks (Regular West/East, Premium, Diesel) and        #
+#  updates every 10 minutes.                                               #
+#                                                                          #
+#  Usage:                                                                  #
+#  1. Set the correct COM port in the PORT_COM variable                    #
+#  2. Run the script: python veeder_root_poller.py                         #
+#  3. Configure Blue Iris to use the generated text file as an overlay     #
+#                                                                          #
+#  See the GitHub repository for detailed setup instructions               #
+#  Last Updated: March 2025                                                #
+#                                                                          #
+############################################################################
+"""
+
 import serial
 import time
 import datetime
